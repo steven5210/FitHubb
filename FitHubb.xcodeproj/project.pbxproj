@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74299AF41BDEE38400D617B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74299AF31BDEE38400D617B3 /* AppDelegate.swift */; };
+		74299AF61BDEE38400D617B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74299AF51BDEE38400D617B3 /* ViewController.swift */; };
+		74299AF91BDEE38400D617B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74299AF71BDEE38400D617B3 /* Main.storyboard */; };
+		74299AFB1BDEE38400D617B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74299AFA1BDEE38400D617B3 /* Assets.xcassets */; };
+		74299AFE1BDEE38400D617B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74299AFC1BDEE38400D617B3 /* LaunchScreen.storyboard */; };
+		74299B091BDEE38400D617B3 /* FitHubbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74299B081BDEE38400D617B3 /* FitHubbTests.swift */; };
+		74299B141BDEE38400D617B3 /* FitHubbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74299B131BDEE38400D617B3 /* FitHubbUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74299B051BDEE38400D617B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74299AE81BDEE38400D617B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74299AEF1BDEE38400D617B3;
+			remoteInfo = FitHubb;
+		};
+		74299B101BDEE38400D617B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74299AE81BDEE38400D617B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74299AEF1BDEE38400D617B3;
+			remoteInfo = FitHubb;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74299AF01BDEE38400D617B3 /* FitHubb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitHubb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74299AF31BDEE38400D617B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74299AF51BDEE38400D617B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74299AF81BDEE38400D617B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74299AFA1BDEE38400D617B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74299AFD1BDEE38400D617B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74299AFF1BDEE38400D617B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74299B041BDEE38400D617B3 /* FitHubbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitHubbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74299B081BDEE38400D617B3 /* FitHubbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitHubbTests.swift; sourceTree = "<group>"; };
+		74299B0A1BDEE38400D617B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74299B0F1BDEE38400D617B3 /* FitHubbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitHubbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74299B131BDEE38400D617B3 /* FitHubbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitHubbUITests.swift; sourceTree = "<group>"; };
+		74299B151BDEE38400D617B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74299AED1BDEE38400D617B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74299B011BDEE38400D617B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74299B0C1BDEE38400D617B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74299AE71BDEE38400D617B3 = {
+			isa = PBXGroup;
+			children = (
+				74299AF21BDEE38400D617B3 /* FitHubb */,
+				74299B071BDEE38400D617B3 /* FitHubbTests */,
+				74299B121BDEE38400D617B3 /* FitHubbUITests */,
+				74299AF11BDEE38400D617B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74299AF11BDEE38400D617B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74299AF01BDEE38400D617B3 /* FitHubb.app */,
+				74299B041BDEE38400D617B3 /* FitHubbTests.xctest */,
+				74299B0F1BDEE38400D617B3 /* FitHubbUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74299AF21BDEE38400D617B3 /* FitHubb */ = {
+			isa = PBXGroup;
+			children = (
+				74299AF31BDEE38400D617B3 /* AppDelegate.swift */,
+				74299AF51BDEE38400D617B3 /* ViewController.swift */,
+				74299AF71BDEE38400D617B3 /* Main.storyboard */,
+				74299AFA1BDEE38400D617B3 /* Assets.xcassets */,
+				74299AFC1BDEE38400D617B3 /* LaunchScreen.storyboard */,
+				74299AFF1BDEE38400D617B3 /* Info.plist */,
+			);
+			path = FitHubb;
+			sourceTree = "<group>";
+		};
+		74299B071BDEE38400D617B3 /* FitHubbTests */ = {
+			isa = PBXGroup;
+			children = (
+				74299B081BDEE38400D617B3 /* FitHubbTests.swift */,
+				74299B0A1BDEE38400D617B3 /* Info.plist */,
+			);
+			path = FitHubbTests;
+			sourceTree = "<group>";
+		};
+		74299B121BDEE38400D617B3 /* FitHubbUITests */ = {
+			isa = PBXGroup;
+			children = (
+				74299B131BDEE38400D617B3 /* FitHubbUITests.swift */,
+				74299B151BDEE38400D617B3 /* Info.plist */,
+			);
+			path = FitHubbUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74299AEF1BDEE38400D617B3 /* FitHubb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74299B181BDEE38400D617B3 /* Build configuration list for PBXNativeTarget "FitHubb" */;
+			buildPhases = (
+				74299AEC1BDEE38400D617B3 /* Sources */,
+				74299AED1BDEE38400D617B3 /* Frameworks */,
+				74299AEE1BDEE38400D617B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitHubb;
+			productName = FitHubb;
+			productReference = 74299AF01BDEE38400D617B3 /* FitHubb.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74299B031BDEE38400D617B3 /* FitHubbTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74299B1B1BDEE38400D617B3 /* Build configuration list for PBXNativeTarget "FitHubbTests" */;
+			buildPhases = (
+				74299B001BDEE38400D617B3 /* Sources */,
+				74299B011BDEE38400D617B3 /* Frameworks */,
+				74299B021BDEE38400D617B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74299B061BDEE38400D617B3 /* PBXTargetDependency */,
+			);
+			name = FitHubbTests;
+			productName = FitHubbTests;
+			productReference = 74299B041BDEE38400D617B3 /* FitHubbTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		74299B0E1BDEE38400D617B3 /* FitHubbUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74299B1E1BDEE38400D617B3 /* Build configuration list for PBXNativeTarget "FitHubbUITests" */;
+			buildPhases = (
+				74299B0B1BDEE38400D617B3 /* Sources */,
+				74299B0C1BDEE38400D617B3 /* Frameworks */,
+				74299B0D1BDEE38400D617B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74299B111BDEE38400D617B3 /* PBXTargetDependency */,
+			);
+			name = FitHubbUITests;
+			productName = FitHubbUITests;
+			productReference = 74299B0F1BDEE38400D617B3 /* FitHubbUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74299AE81BDEE38400D617B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Steven Huynh";
+				TargetAttributes = {
+					74299AEF1BDEE38400D617B3 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = P58G28J2X3;
+					};
+					74299B031BDEE38400D617B3 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = P58G28J2X3;
+						TestTargetID = 74299AEF1BDEE38400D617B3;
+					};
+					74299B0E1BDEE38400D617B3 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = P58G28J2X3;
+						TestTargetID = 74299AEF1BDEE38400D617B3;
+					};
+				};
+			};
+			buildConfigurationList = 74299AEB1BDEE38400D617B3 /* Build configuration list for PBXProject "FitHubb" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74299AE71BDEE38400D617B3;
+			productRefGroup = 74299AF11BDEE38400D617B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74299AEF1BDEE38400D617B3 /* FitHubb */,
+				74299B031BDEE38400D617B3 /* FitHubbTests */,
+				74299B0E1BDEE38400D617B3 /* FitHubbUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74299AEE1BDEE38400D617B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74299AFE1BDEE38400D617B3 /* LaunchScreen.storyboard in Resources */,
+				74299AFB1BDEE38400D617B3 /* Assets.xcassets in Resources */,
+				74299AF91BDEE38400D617B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74299B021BDEE38400D617B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74299B0D1BDEE38400D617B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74299AEC1BDEE38400D617B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74299AF61BDEE38400D617B3 /* ViewController.swift in Sources */,
+				74299AF41BDEE38400D617B3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74299B001BDEE38400D617B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74299B091BDEE38400D617B3 /* FitHubbTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74299B0B1BDEE38400D617B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74299B141BDEE38400D617B3 /* FitHubbUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74299B061BDEE38400D617B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74299AEF1BDEE38400D617B3 /* FitHubb */;
+			targetProxy = 74299B051BDEE38400D617B3 /* PBXContainerItemProxy */;
+		};
+		74299B111BDEE38400D617B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74299AEF1BDEE38400D617B3 /* FitHubb */;
+			targetProxy = 74299B101BDEE38400D617B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74299AF71BDEE38400D617B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74299AF81BDEE38400D617B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74299AFC1BDEE38400D617B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74299AFD1BDEE38400D617B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74299B161BDEE38400D617B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74299B171BDEE38400D617B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74299B191BDEE38400D617B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitHubb/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.msn-shuynh5210.FitHubb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		74299B1A1BDEE38400D617B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitHubb/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.msn-shuynh5210.FitHubb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		74299B1C1BDEE38400D617B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FitHubbTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.msn-shuynh5210.FitHubbTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitHubb.app/FitHubb";
+			};
+			name = Debug;
+		};
+		74299B1D1BDEE38400D617B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FitHubbTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.msn-shuynh5210.FitHubbTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitHubb.app/FitHubb";
+			};
+			name = Release;
+		};
+		74299B1F1BDEE38400D617B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FitHubbUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.msn-shuynh5210.FitHubbUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FitHubb;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		74299B201BDEE38400D617B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FitHubbUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.msn-shuynh5210.FitHubbUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FitHubb;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74299AEB1BDEE38400D617B3 /* Build configuration list for PBXProject "FitHubb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74299B161BDEE38400D617B3 /* Debug */,
+				74299B171BDEE38400D617B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74299B181BDEE38400D617B3 /* Build configuration list for PBXNativeTarget "FitHubb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74299B191BDEE38400D617B3 /* Debug */,
+				74299B1A1BDEE38400D617B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		74299B1B1BDEE38400D617B3 /* Build configuration list for PBXNativeTarget "FitHubbTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74299B1C1BDEE38400D617B3 /* Debug */,
+				74299B1D1BDEE38400D617B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		74299B1E1BDEE38400D617B3 /* Build configuration list for PBXNativeTarget "FitHubbUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74299B1F1BDEE38400D617B3 /* Debug */,
+				74299B201BDEE38400D617B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74299AE81BDEE38400D617B3 /* Project object */;
+}
