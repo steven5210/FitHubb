@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -37,14 +39,27 @@ class LoginViewController: UIViewController {
         }
     }
     @IBAction func RegisterButtonPressed(sender: UIButton) {
-//        if PasswordInputField.text! == ConfirmPasswordInputField.text! {
-            if let urlToReq = NSURL(string: "https://lifthubb.herokuapp.com/events") {
-                let request = NSMutableURLRequest(URL: urlToReq)
-                request.HTTPMethod = "POST"
-                let bodyData = "Email=\(UserNameInputField.text!)"
-                request.HTTPBody = bodyData.dataUsingEncoding(NSUTF8StringEncoding)
-                NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: afterRequest).resume()
+//
+//            if let urlToReq = NSURL(string: "https://fithubb.herokuapp.com/api/events/8") {
+//                let request = NSMutableURLRequest(URL: urlToReq)
+//                request.HTTPMethod = "PUT"
+//                let bodyData = "event[title]=\(UserNameInputField.text!)"
+//                request.HTTPBody = bodyData.dataUsingEncoding(NSUTF8StringEncoding)
+//                NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: afterRequest).resume()
 //            }
+
+        if PasswordInputField.text! == ConfirmPasswordInputField.text! {
+            Alamofire.request(.PUT, "https://fithubb.herokuapp.com/api/events/8", parameters: ["event[title]":UserNameInputField.text!])
+                .responseJSON { response in
+    //                print(response.request)  // original URL request
+    //                print(response.response) // URL response
+    //                print(response.data)     // server data
+    //                print(response.result)   // result of response serialization
+                    
+                    if let JSON = response.result.value {
+                        print("JSON: \(JSON)")
+                    }
+            }
         }
         else {
             PasswordError.hidden = false
@@ -57,7 +72,9 @@ class LoginViewController: UIViewController {
         SignUpButton.hidden = true
     }
     func afterRequest(data: NSData?, response: NSURLResponse?, error: NSError?) {
-        
+        let json = JSON(data: data!)
+        print(json)
+
     }
 
 
