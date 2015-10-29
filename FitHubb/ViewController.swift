@@ -11,37 +11,55 @@ import MapKit
 import CoreLocation
 
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate{
 
     @IBOutlet weak var Map: MKMapView!
+
     
-    let locationManager = CLLocationManager()
+    let coreLocationManager = CLLocationManager()
+    
+    let locationManager = LocationManager.sharedInstance
+ 
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.startUpdatingLocation()
         
         
-        let location = CLLocationCoordinate2D(
-            latitude: 51.50007773,
-            longitude: -0.1246402
-        )
-        // 2
-        let span = MKCoordinateSpanMake(0.05, 0.05)
-        let region = MKCoordinateRegion(center: location, span: span)
-        Map.setRegion(region, animated: true)
+        let authorizationCode = CLLocationManager.authorizationStatus()
         
-        //3
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = location
-        annotation.title = "Steven Belicina"
-        annotation.subtitle = "London"
-        Map.addAnnotation(annotation)
-//        annotation.coordinate = location
+        if authorizationCode == CLAuthorizationStatus.NotDetermined && coreLocationManager.respondsToSelector("requestAlwaysAuthorization") || coreLocationManager.respondsToSelector("requestWhenInUseAuthoriztion") {
+        if NSBundle.mainBundle().objectForInfoDictionaryKey("NSLocationAlwaysUsageDescription") != nil {
+        coreLocationManager.requestAlwaysAuthorization()
+        } else {
+        print("No description provided")
+         }
+        } else {
+            Map.showsUserLocation = true
+        }
+    }
+
+    @IBAction func UpdateLocationButtonPressed(sender: UIButton) {
+        Map.showsUserLocation = true
+        getLocation()
+        
+    }
+    
+    func getLocation() {
+        locationManager.startUpdatingLocationWithCompletionHandler { (latitude, longitude, status, verboseMessage, error) -> () in
+            
+
+          self.displayLocation(CLLocation(latitude: (self.coreLocationManager.location?.coordinate.latitude)!, longitude: (self.coreLocationManager.location?.coordinate.longitude)!))
+        }
+    }
+    
+    func displayLocation(location: CLLocation){
+        Map.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2DMake(self.Map.userLocation.coordinate.latitude, self.Map.userLocation.coordinate.longitude), span: MKCoordinateSpanMake(0.08, 0.08)), animated: true)
+        
+        locationManager.reverseGeocodeLocationUsingGoogleWithCoordinates(location) { (reverseGecodeInfo, placemark, error) -> Void in
+            print(reverseGecodeInfo!)
+        }
+        Map.showsUserLocation = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,44 +67,5 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
   
-
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-
-        
-        print("locations = \(locValue.latitude) \(locValue.longitude)")
-        
-        CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: { (placemarks, error) -> Void in
-            
-            if error != nil
-            {
-                print("Error:" + error!.localizedDescription)
-                return
-            }
-            
-            if placemarks?.count > 0
-            {
-                if let pm = placemarks?.first {
-                    self.displayLocationInfo(pm)
-                }
-            }
-            
-        })
-    }
-    
-    func displayLocationInfo(placemark: CLPlacemark)
-    {
-        self.locationManager.stopUpdatingLocation()
-        print(placemark.locality!)
-        print(placemark.postalCode!)
-        print(placemark.administrativeArea!)
-        print(placemark.country!)
-        print(placemark.location!)
-    }
-    
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        print("Error:" + error.localizedDescription)
-    }
 }
 

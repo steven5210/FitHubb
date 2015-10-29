@@ -4,8 +4,6 @@
 <dict>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
-	<key>NSLocationWhenInUsage</key>
-	<string>Hello </string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
