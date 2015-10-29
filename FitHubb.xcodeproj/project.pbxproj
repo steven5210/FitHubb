@@ -10,13 +10,15 @@
 		7424ADE51BE2967F002CDFD2 /* createEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424ADE41BE2967F002CDFD2 /* createEventViewController.swift */; };
 		742543A81BE123FA007E4A40 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742543A71BE123FA007E4A40 /* ProfileViewController.swift */; };
 		74299AF41BDEE38400D617B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74299AF31BDEE38400D617B3 /* AppDelegate.swift */; };
-		74299AF61BDEE38400D617B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74299AF51BDEE38400D617B3 /* ViewController.swift */; };
 		74299AF91BDEE38400D617B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74299AF71BDEE38400D617B3 /* Main.storyboard */; };
 		74299AFB1BDEE38400D617B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74299AFA1BDEE38400D617B3 /* Assets.xcassets */; };
 		74299AFE1BDEE38400D617B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74299AFC1BDEE38400D617B3 /* LaunchScreen.storyboard */; };
 		74299B091BDEE38400D617B3 /* FitHubbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74299B081BDEE38400D617B3 /* FitHubbTests.swift */; };
 		74299B141BDEE38400D617B3 /* FitHubbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74299B131BDEE38400D617B3 /* FitHubbUITests.swift */; };
 		7431900D1BE04FA10006A425 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7431900C1BE04FA10006A425 /* LoginViewController.swift */; };
+		74AFEEF31BE2D4220068B449 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AFEEF21BE2D4220068B449 /* EventViewController.swift */; };
+		74AFEEF71BE2D45A0068B449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AFEEF61BE2D45A0068B449 /* ViewController.swift */; };
+		74AFEEF91BE2D46B0068B449 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AFEEF81BE2D46B0068B449 /* LocationManager.swift */; };
 		867EC2122F11DE4BFB5F16B4 /* Pods_FitHubb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D80479B79E032242EC811 /* Pods_FitHubb.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +44,6 @@
 		742543A71BE123FA007E4A40 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		74299AF01BDEE38400D617B3 /* FitHubb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitHubb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74299AF31BDEE38400D617B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74299AF51BDEE38400D617B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74299AF81BDEE38400D617B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74299AFA1BDEE38400D617B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74299AFD1BDEE38400D617B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +55,9 @@
 		74299B131BDEE38400D617B3 /* FitHubbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitHubbUITests.swift; sourceTree = "<group>"; };
 		74299B151BDEE38400D617B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7431900C1BE04FA10006A425 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		74AFEEF21BE2D4220068B449 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		74AFEEF61BE2D45A0068B449 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74AFEEF81BE2D46B0068B449 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BDD26A509D484263999C4A62 /* Pods-FitHubb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitHubb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitHubb/Pods-FitHubb.debug.xcconfig"; sourceTree = "<group>"; };
 		C27D80479B79E032242EC811 /* Pods_FitHubb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitHubb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52A716E26F2D49F35354AD1 /* Pods-FitHubb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitHubb.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitHubb/Pods-FitHubb.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,8 +124,10 @@
 			isa = PBXGroup;
 			children = (
 				74299AF31BDEE38400D617B3 /* AppDelegate.swift */,
-				74299AF51BDEE38400D617B3 /* ViewController.swift */,
 				74299AF71BDEE38400D617B3 /* Main.storyboard */,
+				74AFEEF61BE2D45A0068B449 /* ViewController.swift */,
+				74AFEEF21BE2D4220068B449 /* EventViewController.swift */,
+				74AFEEF81BE2D46B0068B449 /* LocationManager.swift */,
 				7424ADE41BE2967F002CDFD2 /* createEventViewController.swift */,
 				742543A71BE123FA007E4A40 /* ProfileViewController.swift */,
 				7431900C1BE04FA10006A425 /* LoginViewController.swift */,
@@ -343,10 +349,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74AFEEF71BE2D45A0068B449 /* ViewController.swift in Sources */,
+				74AFEEF31BE2D4220068B449 /* EventViewController.swift in Sources */,
 				7424ADE51BE2967F002CDFD2 /* createEventViewController.swift in Sources */,
+				74AFEEF91BE2D46B0068B449 /* LocationManager.swift in Sources */,
 				7431900D1BE04FA10006A425 /* LoginViewController.swift in Sources */,
 				742543A81BE123FA007E4A40 /* ProfileViewController.swift in Sources */,
-				74299AF61BDEE38400D617B3 /* ViewController.swift in Sources */,
 				74299AF41BDEE38400D617B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
