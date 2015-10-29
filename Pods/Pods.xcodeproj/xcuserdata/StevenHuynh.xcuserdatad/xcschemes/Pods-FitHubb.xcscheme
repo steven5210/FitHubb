@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '98502134BA4E5F0B04F0B1C5'
+               BlueprintIdentifier = '304350D9622CEC2A1CEF1991'
                BlueprintName = 'Pods-FitHubb'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_FitHubb.framework'>
