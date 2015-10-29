@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ojN-6S-VK5">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ojN-6S-VK5">
                                 <rect key="frame" x="20" y="28" width="560" height="478"/>
                                 <animations/>
                             </mapView>
@@ -72,14 +73,14 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz0-Dx-3wd">
-                                <rect key="frame" x="251" y="176" width="98.5" height="20.5"/>
+                                <rect key="frame" x="251" y="176" width="99" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6I-vy-pR3">
-                                <rect key="frame" x="286" y="315.5" width="29.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BMI" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6I-vy-pR3">
+                                <rect key="frame" x="286" y="316" width="30" height="20"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Z6I-vy-pR3" secondAttribute="height" multiplier="29:20" id="fd2-uP-Rj4"/>
@@ -95,8 +96,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efr-J5-hDg">
-                                <rect key="frame" x="285" y="258.5" width="30" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efr-J5-hDg">
+                                <rect key="frame" x="285" y="259" width="30" height="20"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Efr-J5-hDg" secondAttribute="height" multiplier="3:2" id="w1W-HP-Gn1"/>
@@ -113,7 +114,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Gender" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJf-JV-ERS">
-                                <rect key="frame" x="272" y="287" width="57" height="20.5"/>
+                                <rect key="frame" x="272" y="287" width="57" height="21"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oJf-JV-ERS" secondAttribute="height" multiplier="57:20" id="5HX-63-gbz"/>
@@ -272,7 +273,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJg-wA-0ri">
-                                <rect key="frame" x="259" y="446" width="82.5" height="22"/>
+                                <rect key="frame" x="259" y="446" width="83" height="22"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="82.5" id="c20-QR-sfH"/>
