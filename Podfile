@@ -6,7 +6,6 @@ use_frameworks!
 target 'FitHubb' do
 pod 'Alamofire'
 pod 'SwiftyJSON'
-
 end
 
 target 'FitHubbTests' do
