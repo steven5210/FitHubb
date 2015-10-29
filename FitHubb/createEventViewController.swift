@@ -21,11 +21,11 @@ class createEventViewController: UIViewController, UIPickerViewDataSource, UIPic
         super.viewDidLoad()
         self.activityPicker.dataSource = self
         self.activityPicker.delegate = self
-        Alamofire.request(.GET, "https://fithubb.herokuapp.com/", parameters: ["event[title]":]).responseJSON { response in
+        Alamofire.request(.GET, "https://fithubb.herokuapp.com/api/activities").responseJSON { response in
             if let JSON = response.result.value {
                 print("JSON: \(JSON)")
             }
-        activityDataSource.append()
+//        activityDataSource.append()
         }
     }
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
