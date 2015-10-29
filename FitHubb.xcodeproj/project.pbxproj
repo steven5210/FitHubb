@@ -15,6 +15,8 @@
 		74299AFE1BDEE38400D617B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74299AFC1BDEE38400D617B3 /* LaunchScreen.storyboard */; };
 		74299B091BDEE38400D617B3 /* FitHubbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74299B081BDEE38400D617B3 /* FitHubbTests.swift */; };
 		74299B141BDEE38400D617B3 /* FitHubbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74299B131BDEE38400D617B3 /* FitHubbUITests.swift */; };
+		7431900D1BE04FA10006A425 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7431900C1BE04FA10006A425 /* LoginViewController.swift */; };
+		867EC2122F11DE4BFB5F16B4 /* Pods_FitHubb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D80479B79E032242EC811 /* Pods_FitHubb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		74299B0F1BDEE38400D617B3 /* FitHubbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitHubbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74299B131BDEE38400D617B3 /* FitHubbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitHubbUITests.swift; sourceTree = "<group>"; };
 		74299B151BDEE38400D617B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7431900C1BE04FA10006A425 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BDD26A509D484263999C4A62 /* Pods-FitHubb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitHubb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitHubb/Pods-FitHubb.debug.xcconfig"; sourceTree = "<group>"; };
+		C27D80479B79E032242EC811 /* Pods_FitHubb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitHubb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52A716E26F2D49F35354AD1 /* Pods-FitHubb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitHubb.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitHubb/Pods-FitHubb.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867EC2122F11DE4BFB5F16B4 /* Pods_FitHubb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B47EE7DFB17C44538F7149F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDD26A509D484263999C4A62 /* Pods-FitHubb.debug.xcconfig */,
+				C52A716E26F2D49F35354AD1 /* Pods-FitHubb.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		74299AE71BDEE38400D617B3 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +100,8 @@
 				74299B071BDEE38400D617B3 /* FitHubbTests */,
 				74299B121BDEE38400D617B3 /* FitHubbUITests */,
 				74299AF11BDEE38400D617B3 /* Products */,
+				6B47EE7DFB17C44538F7149F /* Pods */,
+				9AAA9002301905ACF3890F56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,7 +125,6 @@
 				74299AFA1BDEE38400D617B3 /* Assets.xcassets */,
 				74299AFC1BDEE38400D617B3 /* LaunchScreen.storyboard */,
 				74299AFF1BDEE38400D617B3 /* Info.plist */,
-				1184CA201BDF045A001010F1 /* GoogleMapsApiKey.h */,
 			);
 			path = FitHubb;
 			sourceTree = "<group>";
@@ -130,6 +147,14 @@
 			path = FitHubbUITests;
 			sourceTree = "<group>";
 		};
+		9AAA9002301905ACF3890F56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C27D80479B79E032242EC811 /* Pods_FitHubb.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74299B181BDEE38400D617B3 /* Build configuration list for PBXNativeTarget "FitHubb" */;
 			buildPhases = (
+				EE681CF51BD1757CB3B1607F /* Check Pods Manifest.lock */,
 				74299AEC1BDEE38400D617B3 /* Sources */,
 				74299AED1BDEE38400D617B3 /* Frameworks */,
 				74299AEE1BDEE38400D617B3 /* Resources */,
+				47F3D042ACED5C426C033D73 /* Embed Pods Frameworks */,
+				D5933CD33FE16EF6CD416A3E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +286,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47F3D042ACED5C426C033D73 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitHubb/Pods-FitHubb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5933CD33FE16EF6CD416A3E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitHubb/Pods-FitHubb-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE681CF51BD1757CB3B1607F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74299AEC1BDEE38400D617B3 /* Sources */ = {
@@ -406,6 +482,7 @@
 		};
 		74299B191BDEE38400D617B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDD26A509D484263999C4A62 /* Pods-FitHubb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -421,6 +498,7 @@
 		};
 		74299B1A1BDEE38400D617B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52A716E26F2D49F35354AD1 /* Pods-FitHubb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
