@@ -19,6 +19,9 @@
 		74AFEEF31BE2D4220068B449 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AFEEF21BE2D4220068B449 /* EventViewController.swift */; };
 		74AFEEF71BE2D45A0068B449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AFEEF61BE2D45A0068B449 /* ViewController.swift */; };
 		74AFEEF91BE2D46B0068B449 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AFEEF81BE2D46B0068B449 /* LocationManager.swift */; };
+		74EBFA9D1BE3C8860083162E /* detailedEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EBFA9C1BE3C8860083162E /* detailedEventViewController.swift */; };
+		74ED93461BE59958005F16E5 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ED93451BE59958005F16E5 /* CustomCell.swift */; };
+		74ED93481BE5A2A5005F16E5 /* EventsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ED93471BE5A2A5005F16E5 /* EventsTableView.swift */; };
 		867EC2122F11DE4BFB5F16B4 /* Pods_FitHubb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D80479B79E032242EC811 /* Pods_FitHubb.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,9 @@
 		74AFEEF21BE2D4220068B449 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		74AFEEF61BE2D45A0068B449 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74AFEEF81BE2D46B0068B449 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		74EBFA9C1BE3C8860083162E /* detailedEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailedEventViewController.swift; sourceTree = "<group>"; };
+		74ED93451BE59958005F16E5 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		74ED93471BE5A2A5005F16E5 /* EventsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableView.swift; sourceTree = "<group>"; };
 		BDD26A509D484263999C4A62 /* Pods-FitHubb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitHubb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitHubb/Pods-FitHubb.debug.xcconfig"; sourceTree = "<group>"; };
 		C27D80479B79E032242EC811 /* Pods_FitHubb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitHubb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52A716E26F2D49F35354AD1 /* Pods-FitHubb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitHubb.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitHubb/Pods-FitHubb.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,8 +131,10 @@
 			children = (
 				74299AF31BDEE38400D617B3 /* AppDelegate.swift */,
 				74299AF71BDEE38400D617B3 /* Main.storyboard */,
+				74ED93451BE59958005F16E5 /* CustomCell.swift */,
 				74AFEEF61BE2D45A0068B449 /* ViewController.swift */,
 				74AFEEF21BE2D4220068B449 /* EventViewController.swift */,
+				74EBFA9C1BE3C8860083162E /* detailedEventViewController.swift */,
 				74AFEEF81BE2D46B0068B449 /* LocationManager.swift */,
 				7424ADE41BE2967F002CDFD2 /* createEventViewController.swift */,
 				742543A71BE123FA007E4A40 /* ProfileViewController.swift */,
@@ -134,6 +142,7 @@
 				74299AFA1BDEE38400D617B3 /* Assets.xcassets */,
 				74299AFC1BDEE38400D617B3 /* LaunchScreen.storyboard */,
 				74299AFF1BDEE38400D617B3 /* Info.plist */,
+				74ED93471BE5A2A5005F16E5 /* EventsTableView.swift */,
 			);
 			path = FitHubb;
 			sourceTree = "<group>";
@@ -349,9 +358,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74ED93481BE5A2A5005F16E5 /* EventsTableView.swift in Sources */,
 				74AFEEF71BE2D45A0068B449 /* ViewController.swift in Sources */,
 				74AFEEF31BE2D4220068B449 /* EventViewController.swift in Sources */,
 				7424ADE51BE2967F002CDFD2 /* createEventViewController.swift in Sources */,
+				74EBFA9D1BE3C8860083162E /* detailedEventViewController.swift in Sources */,
+				74ED93461BE59958005F16E5 /* CustomCell.swift in Sources */,
 				74AFEEF91BE2D46B0068B449 /* LocationManager.swift in Sources */,
 				7431900D1BE04FA10006A425 /* LoginViewController.swift in Sources */,
 				742543A81BE123FA007E4A40 /* ProfileViewController.swift in Sources */,

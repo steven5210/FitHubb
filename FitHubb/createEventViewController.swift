@@ -15,17 +15,28 @@ class createEventViewController: UIViewController, UIPickerViewDataSource, UIPic
     @IBOutlet weak var locationLabel: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var activityPicker: UIPickerView!
+    
     var activityDataSource = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.activityPicker.dataSource = self
         self.activityPicker.delegate = self
+        getActivity()
+    }
+    func getActivity() {
         Alamofire.request(.GET, "https://fithubb.herokuapp.com/api/activities").responseJSON { response in
+
             if let JSON = response.result.value {
-                print("JSON: \(JSON)")
-            }
-//        activityDataSource.append()
+                for var i = 0; i < JSON.count; ++i {
+                    if let activity = JSON[i]{
+                        if let kind = (activity["kind"])! {
+                        self.activityDataSource.append(String(kind))
+                        self.activityPicker.reloadAllComponents()
+                        }
+                        }
+                    }
+                }
         }
     }
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {

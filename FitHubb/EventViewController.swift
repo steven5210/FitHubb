@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class EventViewController: UITableViewController {
+class EventTableViewController: UITableViewController {
 
     var events = ["Seattle"]
     
@@ -26,6 +26,10 @@ class EventViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
+    }
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView
+        print(cell)
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
